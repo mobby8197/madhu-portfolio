@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .about-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        background-color: #87476f45;
+    }
+
+    .profile img {
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .info {
+        margin-left: 30px;
+    }
+
+    .info h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .info p {
+        font-size: 18px;
+        color: #777;
+        margin-bottom: 20px;
+    }
+
+    .icons img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .about-section {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .info {
+            margin: 20px 0;
+        }
+
+        .profile img {
+            margin-bottom: 20px;
+        }
+    }
+
+    /* Additional styles for improved appearance */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.9);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .about-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 100px 0;
+    }
+
+    .profile img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .info {
+        max-width: 600px;
+        margin-left: 60px;
+    }
+
+    .info h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .info p {
+        font-size: 20px;
+        color: #7122b7;
+        margin-bottom: 30px;
+    }
+
+    .icons p {
+        color: #000;
+    }
+
+    .icons img {
+        width: 40px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            height: auto;
+            background-color: rgba(51, 51, 51, 0.9);
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        .about-section {
+            padding: 60px 0;
+        }
+
+        .info {
+            max-width: 100%;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile img {
+            margin-bottom: 30px;
+        }
+    }
+
+    .resume {
+      background: rgb(122, 152, 140);
+      padding: 2rem;
+    }
+
+    .summary {
+      background: rgb(109, 171, 200);
+      padding: 2rem;
+    }
+    
+    .discription {
+      background: rgb(134, 155, 147);
+      padding: 2rem;
+    }
+
+    footer {
+        background-color: #000;
+        color: #f8f8f8;
+        text-align: center;
+        height: 25px;
+    }
+
+</style>
+
+<body>
+    <section id="about" class="about-section">
+        <div class="profile">
+            <img src="./profile-image.jpg" alt="Profile Image">
+        </div>
+        <div class="info">
+            <h1>Madhusudan K S</h1>
+            <p>Web Developer | Front - End Developer</p>         
+            <div class="icons">
+                <p>Contect me</p>
+                <a href="https://www.linkedin.com/in/madhusudan-ks1712" target="_blank">
+                    <img src="./linkedin-logo.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:madhusudan.ks1712@gmail.com" target="_blank">
+                    <img src="./gmail-logo.png" alt="Gmail">
+                </a>
+                <a href="https://www.instagram.com/__mobby__/" target="_blank">
+                    <img src="./insta-logo.png" alt="Instagram">
+                </a>
+                <a href="tel:+91 8197045435" target="_blank">
+                    <img src="./contact-logo.png" alt="Contact">
+                </a>
+                <a href="https://www.google.com/maps/place/Mysuru,+Karnataka/@12.3108011,76.5532875,12z/data=!3m1!4b1!4m6!3m5!1s0x3baf70381d572ef9:0x2b89ece8c0f8396d!8m2!3d12.2958104!4d76.6393805!16zL20vMGo2MDM?authuser=0&entry=ttu" target="_blank">
+                    <img src="./map-logo.png" alt="Location">
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="summary">
+        <p><h3>SUMMARY:</h3>Computer Science graduate with a passion for innovation and technology. Passionate in web development, project management, and cloud computing. Adept at creating solutions that combine technical expertise with real-world applications.</p>
+    </div>
+        <div class="resume">
+            <h3>EDUCATION:</h3>
+            <div class="discription">
+            <ul>
+                <li>BE in Computer science & engineering, <a href="https://atme.in/computer-science-and-engineering/about-the-department/">ATME college eng, Mysore</a>, with 7.45 CGPA ,in 2023</li>
+                <li>PUC from <a href="https://starofmysore.com/tag/jnanodaya-pu-college/">SVIC Jnanodaya PU college</a>, Mysore with 60.66% in 2019</li>
+                <li>SSLC from <a href="https://jyothirvikas-english-medium-school.business.site/">Jyothir Vikas Eng. Med. School</a>, Chikmagalur with 74.56% in 2017</li>
+            </ul>
+        </div>
+
+        <h3>COMPUTER SKILLS:</h3>
+        <div class="discription">
+        <ul>
+            <li>Programming : C, Java</li>
+            <li>Web development : HTML, CSS, JavaScript</li> 
+            <li>Frameworks : Flask, Django</li>
+            <li>Databases : MySQL</li>
+            <li>Tools : [VS Code, Code Blocks], Office Packages :[MS-Word, Excel, PowerPoint]</li>
+        </ul>
+        </div>
+
+        <h3>FINAL YEAR PROJECT:</h3>
+        <div class="discription">
+            <li><b>Driver Drowsiness and Yawn Detection:</b></li>
+            Designed and developed a comprehensive website to alert drivers when they show signs of drowsiness or yawning while driving. Utilized facial tracking technology to continuously monitor the driver's face.
+        </div>
+        
+        <h3>MINI PROJECT:</h3>
+        <div class="discription">
+            <ul>
+                <li><b>Online Marriage Registration System:</b></li>
+                Developed a comprehensive website to facilitate online marriage registration, offering separate sign-in accounts for administrators and couples. Integrated with a robust database for efficient data management.
+                <li><b>Market segmentation for online healthcare provider</b></li>
+                Techniques of data analytics are applied over large existing Indian census datasets to effectively predict the best state to for initial startups. It was developed with the help of various Python libraries such as NumPy and pandas.
+                <li><b>3D Cafeteria:</b></li>
+                Created a 3D simulation of the college cafeteria, showcasing design and animation skills using OpenGL functions. Transformed the cafeteria experience through interactive visualization.
+                <li><b>BMI Calculator:</b></li>
+                Developed a user-friendly BMI calculation app using Java and XML in Android Studio. Calculated Body Mass Index (BMI) based on height and weight inputs.
+            </ul>
+        </div>
+
+        <h3>INTERNSHIP:</h3>
+        <div class="discription">
+            <ul>
+                I completed my internship at 'Audaz Ventures Private Limited' during which I acquired skills in various data analysis tools. In the initial days, I learned about tools used for data gathering, data cleaning, exploratory data analysis (EDA), and result interpretation, all through the implementation of the Python programming language.
+            </ul>
+            
+        </div>
+
+        <h3>CERTIFICATION: [<a href="https://drive.google.com/drive/folders/1gqVEZnEnzpTsCfJc23L-RJB49qspq2V8?usp=sharing">View</a>]</h3>
+        <div class="discription">
+            <li>C Fundamentals</li>
+            <li>Java Programming Basics</li>
+            <li>Python for Beginners</li>
+        </div>
+
+        <h3>AREAS OF INTEREST:</h3>
+        <div class="discription">
+            <li>App/Web Development</li>
+            <li>Cloud Computing</li>
+            <li>Cybersecurity</li>
+        </div>
+            
+        <h3>Personal Details:</h3>
+        <div class="discription">
+            <ul>
+                <li>Date of Birth : 17/12/2000</li>
+                <li>Languages known – English Kannada, Hindi</li>
+                <li>Hobbies – Sketching & painting ,Traveling and exploring</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 Madhusudan K S</p>
+    </footer>
+</body>
+</html>
